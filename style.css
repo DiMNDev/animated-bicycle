@@ -22,13 +22,13 @@ body {
   position: relative;
 }
 
-@keyframes bicycleAnim {
+@keyframes bicycleAnimation {
   0% {
     transform: rotateZ(0);
   }
 
   100% {
-    transform: rotateZ(-360);
+    transform: rotateZ(-360deg);
   }
 }
 
@@ -46,7 +46,7 @@ body {
   background-clip: content-box;
   display: grid;
   place-items: center;
-  animation: bicycleAnim 5s infinite linear;
+  animation: bicycleAnimation 5s infinite linear;
 }
 
 .wheel::after {
@@ -223,6 +223,7 @@ body {
   left: 40rem;
   border: 0.33rem dashed #000;
   background-clip: content-box;
+  animation: bicycleAnimation 10s infinite linear;
 }
 
 .pedals {
@@ -232,6 +233,7 @@ body {
   top: 37rem;
   left: 44rem;
   transform: rotateZ(0.5rem);
+  animation: bicycleAnimation 10s infinite linear;
 }
 
 .pedals::before,
@@ -243,6 +245,7 @@ body {
   position: absolute;
   left: -1.8rem;
   border-radius: 0.3rem;
+  animation: bicycleAnimation 10s infinite reverse;
 }
 
 .pedals::before {
